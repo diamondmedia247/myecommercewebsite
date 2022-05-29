@@ -1,0 +1,156 @@
+*,
+*::after
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+.container {
+    width: 100%;
+    background-color: #F6F6F6;
+    margin: 0 auto;
+}
+
+.top-nav {
+    width: 60%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 auto;
+    align-items: center;
+}
+
+.top-nav img {
+    width: 50%;
+}
+
+.middle-nav {
+    width: 100%;
+    background-color: #ED017F;
+    min-height: 50px;
+    align-items: center;
+    
+}
+
+.middle-nav-container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 9fr 1fr 1fr 2fr;
+    /* display: flex; */
+    overflow: hidden;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mn-content {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.logo {
+    width: 150px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    background-color: #ED017F;
+}
+
+.logo img {
+    border-radius: 360px;
+    width: 30px;
+    margin-right: 0;
+    padding-top: 9px;
+}
+
+.logo p {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 0;
+    line-height: 0;
+    margin: 0;
+    position: absolute;
+    top: 58%;
+    left: 25px;
+}
+
+.search input {
+    height: 30px;
+    width: 500px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 9px;
+}
+
+/*  Links inside middle nav*/
+.middle-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* the dropdown container */
+.dropdown {
+    /* float: left; */
+    overflow: hidden;
+}
+
+/* dropdown button */
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+
+    /* important for vertical alignment for mobile phones */
+    margin: 0;
+
+}
+
+/* add hover effect to links in nav bar */
+.middle-nav-container a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    color: #ED017F;
+}
+
+/* dropdown content hidden by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    display: block;
+    font-size: 12px;
+    /* text-decoration: none; */
+    /* padding: 12px 16px; */
+}
+
+/* to add background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #F2F2F2;
+}
+
+/* to show dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.middle-nav-container .mn-content {
+ margin-right: 20px;   
+}
